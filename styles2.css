@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 00;
+    box-sizing: border-box;
+}
+
+/* работы с текстом */
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+/*работа с калоннами*/
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* добавляем пространство между элементами */
+    align-items: center; /* выравнивает элмемент по центру */
+}
+/* меняем стиль текста */
+.col h2 {
+color: #fff;
+padding: 10px;/* при наведении радиус затемнения */
+border-radius: 10px;/* при наведении радиус затемнения */
+transition: background 0.3s; /* время затемнения */
+}
+/* цвет текста при наведении и мышка */
+.col h2:hover {
+   background: rgba(0,0, 0, 0.1); 
+   cursor: pointer;/* при наведении изменение курсора */
+}
+.col button {
+    outline: none; /* чтобы небыло выделения замка */
+    border:none ;
+    background: transparent;/* убираем фон замка */
+    font-size: 1.3rem; /* увеличим размер замка */
+    color: #fff;
+    padding: 10px;/* при наведении радиус затемнения */
+    border-radius: 10px;/* при наведении радиус затемнения */
+    transition: background 0.3s; /* время затемнения */
+
+}
+
+/* при наведении курсор */
+.col button:hover {
+    background: rgba(0,0, 0, 0.1); 
+    cursor: pointer;
+}
